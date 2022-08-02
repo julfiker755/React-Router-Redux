@@ -6,6 +6,9 @@ import Nopage from './Component/Nopage/Nopage';
 import Frind from './Component/Frind/Frind';
 import Header from './Component/Header/Header';
 import FriendDel from './Component/Frind/FriendDel';
+import Post from './Component/Post/Post';
+import PostDel from './Component/PostDel/PostDel';
+
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Route path="*" element={<Nopage/>}></Route>
         <Route path="/Frind" element={<Frind/>}/>
         <Route path="/Frinds/:userID" element={<FriendDel></FriendDel>}/>
+        <Route path="/Post" element={<Post></Post>}>
+          <Route path=":postid" element={<PostDel/>}/>
+        </Route>
       </Routes>
     </div>
   );

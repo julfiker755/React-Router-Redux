@@ -8,6 +8,7 @@ function Header() {
             <CustomLink to="/Home">Home</CustomLink>
             <CustomLink to="/Servies">Servies</CustomLink>
             <CustomLink to="/Frind">Frind</CustomLink>
+            <CustomLink to="/Post">Post</CustomLink>
         </div>
     )
 }
